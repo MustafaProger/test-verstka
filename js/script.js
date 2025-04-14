@@ -12,6 +12,8 @@ function updateHeroImageHeight() {
 
 	// Устанавливаем максимальную высоту для картинки
 	heroImg.style.height = `${totalHeight}px`;
+	heroImg.style.minHeight = `${totalHeight}px`;
+
 	heroImg.style.objectFit = "cover"; // или contain, если хочешь видеть всё
 }
 
