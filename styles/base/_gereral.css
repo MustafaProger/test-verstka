@@ -1,0 +1,65 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: "Prata", serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.container {
+	max-width: 1600px;
+	margin: 0 auto;
+	padding: 0 30px;
+}
+
+.list__items {
+	display: flex;
+	flex-direction: column;
+	padding-left: 0;
+	gap: 10px;
+}
+
+.list__item {
+	position: relative;
+	padding-left: 3rem;
+	line-height: 1.5;
+	display: flex;
+	align-items: center;
+}
+
+.list__item::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	width: 40px;
+	height: 40px;
+	background-image: url("../../assets/icon/check.svg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.btn {
+	margin-top: 30px;
+	background: #fff;
+	color: #000;
+	border: 2px solid #fff;
+	padding: 1.5rem 3rem;
+	font-size: 1.5rem;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: background 0.3s;
+}
+
+.btn:hover {
+	background: #222222;
+	color: #fff;
+}

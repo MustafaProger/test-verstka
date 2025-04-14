@@ -1,0 +1,40 @@
+.hero {
+	color: white;
+	background-color: #222222;
+}
+
+.hero__content {
+	min-height: 777px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 20px;
+	flex-wrap: wrap;
+}
+
+.hero__img {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 0;
+	padding: 0;
+}
+
+.hero h1 {
+	font-size: 80px;
+}
+
+.hero__desc {
+	font-size: 50px;
+	margin: 20px 0;
+}
+
+.hero .list__item {
+	font-size: 24px;
+}
+
+.hero .list__item span {
+	font-weight: 700;
+	font-size: 2rem;
+	margin-right: 10px;
+}
