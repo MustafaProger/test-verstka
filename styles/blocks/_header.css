@@ -48,7 +48,8 @@
 	transition: all 0.25s;
 }
 
-.header .list__item a::before {
+.header .list__item a::before,
+.footer__link::before {
 	content: "";
 	position: absolute;
 	width: 100%;
@@ -62,7 +63,8 @@
 	transition: transform 0.3s ease-in-out;
 }
 
-.header .list__item a:hover::before {
+.header .list__item a:hover::before,
+.footer__link:hover::before {
 	transform-origin: left;
 	transform: scaleX(1);
 }

@@ -1,0 +1,112 @@
+.footer {
+	background: #222222;
+	color: #e6e0d4;
+	padding: 40px 0;
+	border-top: 1px solid #D5C9BE;
+	position: relative;
+}
+
+.footer::before {
+	content: '';
+	position: absolute;
+	top: 92px;
+	width: 100%;
+	height: 1px;
+	background-color: #D5C9BE;
+}
+
+.footer__top {
+	text-align: center;
+	margin-bottom: 32px;
+}
+
+.footer__nav {
+	display: flex;
+	justify-content: center;
+	gap: 48px;
+}
+
+.footer__link {
+	color: #e6e0d4;
+	text-decoration: none;
+	font-size: 18px;
+	transition: color 0.2s;
+	position: relative;
+}
+
+.footer__main {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 60px 0 20px 0;
+}
+
+.footer__brand {
+	flex: 1;
+}
+
+.footer__logo {
+	font-size: 32px;
+	letter-spacing: 2px;
+	display: block;
+	margin-bottom: 8px;
+}
+
+.footer__copyright {
+	font-size: 14px;
+	color: #b3ad9f;
+}
+
+.footer__socials {
+	display: flex;
+	gap: 20px;
+	flex: 1;
+	justify-content: center;
+}
+
+.footer__icon img {
+	width: 24px;
+	height: 24px;
+	filter: invert(0);
+	transition: filter 0.2s;
+}
+
+.footer__icon:hover img {
+	filter: invert(60%) sepia(1) saturate(3) hue-rotate(10deg);
+}
+
+.footer__actions {
+	flex: 1;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.footer__actions button {
+	padding: 16px 30px;
+	margin: 0;
+	font-size: 20px;
+	font-style: italic;
+}
+
+.footer__bottom {
+	display: flex;
+	justify-content: center;
+	justify-content: space-between;
+	margin-top: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.footer__policy,
+.footer__terms {
+	color: #b3ad9f;
+	text-decoration: none;
+	font-size: 15px;
+	transition: color 0.2s;
+}
+
+.footer__policy:hover,
+.footer__terms:hover {
+	color: #e6e0d4;
+}

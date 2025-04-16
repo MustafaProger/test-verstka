@@ -33,16 +33,18 @@
 						>LuxEstates</a
 					>
 					<ul class="nav">
-						<li class="list__item"><a href="#">Hero</a></li>
-						<li class="list__item"><a href="#">About</a></li>
-						<li class="list__item"><a href="#">Contact</a></li>
+						<li class="list__item"><a href="#hero">Hero</a></li>
+						<li class="list__item"><a href="#advantages">About</a></li>
+						<li class="list__item"><a href="#form">Contact</a></li>
 					</ul>
 				</div>
 			</div>
 		</header>
 
 		<main>
-			<section class="hero">
+			<section
+				class="hero"
+				id="hero">
 				<div class="container">
 					<div class="hero__content">
 						<div class="hero__text">
@@ -55,7 +57,7 @@
 								</li>
 								<li class="list__item"><span>17%</span> Annual ROI</li>
 							</ul>
-							<button class="btn">Order</button>
+							<button class="btn">ORDER</button>
 						</div>
 						<div class="hero__img">
 							<img
@@ -66,7 +68,9 @@
 				</div>
 			</section>
 
-			<section class="advantages">
+			<section
+				class="advantages"
+				id="advantages">
 				<div class="container">
 					<div class="advantages__content">
 						<div class="advantages__image advantages__image_left">
@@ -97,7 +101,7 @@
 									accessible.
 								</li>
 							</ul>
-							<button class="btn">Order</button>
+							<button class="btn">ORDER</button>
 						</div>
 						<div class="advantages__image advantages__image_right">
 							<img
@@ -108,10 +112,12 @@
 				</div>
 			</section>
 
-			<section class="form-section">
+			<section
+				class="form-section"
+				id="form">
 				<div class="form-box">
 					<div class="form-left">
-						<h2>Consectetur<br />sed do eiusmod</h2>
+						<h2>Get In Touch</h2>
 						<form>
 							<input
 								type="text"
@@ -127,9 +133,11 @@
 								<input
 									type="checkbox"
 									required />
-								<span>I accept Privacy policy</span>
+								<span
+									>I accept <a href="./ privacy.html">Privacy policy</a></span
+								>
 							</label>
-							<button type="submit">SUBMIT FORM</button>
+							<button type="submit">SEND</button>
 						</form>
 					</div>
 					<div class="form-right">
@@ -143,6 +151,96 @@
 				</div>
 			</section>
 		</main>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__top">
+					<nav class="footer__nav">
+						<a
+							href="#"
+							class="footer__link"
+							>Home</a
+						>
+						<a
+							href="#"
+							class="footer__link"
+							>About</a
+						>
+						<a
+							href="#"
+							class="footer__link"
+							>Contact</a
+						>
+					</nav>
+				</div>
+				<div class="footer__main">
+					<div class="footer__brand">
+						<span class="footer__logo">LuxEstates</span>
+					</div>
+					<div class="footer__socials">
+						<a
+							href="#"
+							class="footer__icon"
+							><img
+								src="assets/icon/social-media/instagram.svg"
+								alt="Instagram"
+						/></a>
+						<a
+							href="#"
+							class="footer__icon"
+							><img
+								src="assets/icon/social-media/tiktok.svg"
+								alt="TikTok"
+						/></a>
+						<a
+							href="#"
+							class="footer__icon"
+							><img
+								src="assets/icon/social-media/linkedin.svg"
+								alt="LinkedIn"
+						/></a>
+						<a
+							href="#"
+							class="footer__icon"
+							><img
+								src="assets/icon/social-media/facebook.svg"
+								alt="Facebook"
+						/></a>
+						<a
+							href="#"
+							class="footer__icon"
+							><img
+								src="assets/icon/social-media/telegram.svg"
+								alt="Telegram"
+						/></a>
+						<a
+							href="#"
+							class="footer__icon"
+							><img
+								src="assets/icon/social-media/youtube.svg"
+								alt="YouTube"
+						/></a>
+					</div>
+					<div class="footer__actions">
+						<button class="btn">ORDER</button>
+					</div>
+				</div>
+				<div class="footer__bottom">
+					<span class="footer__copyright">© 2024, Copyright.</span>
+
+					<a
+						href="./ privacy.html"
+						class="footer__policy"
+						>Privacy policy</a
+					>
+					<a
+						href="#"
+						class="footer__terms"
+						>Terms of Use</a
+					>
+				</div>
+			</div>
+		</footer>
 
 		<script src="js/script.js"></script>
 	</body>
