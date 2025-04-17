@@ -7,6 +7,8 @@
 	z-index: 99;
 	background: #222222;
 	color: white;
+	transition: background 0.5s;
+
 }
 
 .header__content {
@@ -74,12 +76,18 @@
 }
 
 .header--scrolled {
-	background: #FCF9F7;
+	background: #fcf9f7;
 	z-index: 101;
-	transition: background 0.5s;
 }
 .header--scrolled .nav a,
 .header--scrolled .logo {
 	color: black;
 	transition: all 0.5s;
+}
+
+.header--scrolled .header__burger span,
+.header--scrolled .header__burger::before,
+.header--scrolled .header__burger::after {
+	background-color: black;
+	transition: background-color 0.5s;
 }

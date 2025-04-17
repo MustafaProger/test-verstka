@@ -24,7 +24,7 @@ function recoloringHeader() {
 	const heroHeight = hero.offsetHeight;
 	const scrollY = window.scrollY || window.pageYOffset;
 
-	if (scrollY > heroHeight - 100) {
+	if (scrollY > heroHeight - 110) {
 		header.classList.add("header--scrolled");
 	} else {
 		header.classList.remove("header--scrolled");
@@ -59,3 +59,26 @@ function pusk() {
 	recoloringHeader();
 	scroll();
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+	const burger = document.querySelector(".header__burger");
+	const nav = document.querySelector(".nav");
+	const overlay = document.querySelector(".overlay");
+	const body = document.body;
+
+	const closeMenu = () => {
+		burger.classList.remove("active");
+		nav.classList.remove("active");
+		overlay.classList.remove("active");
+		body.classList.remove("lock");
+	};
+
+	burger.addEventListener("click", () => {
+		burger.classList.toggle("active");
+		nav.classList.toggle("active");
+		overlay.classList.toggle("active");
+		body.classList.toggle("lock");
+	});
+
+	overlay.addEventListener("click", closeMenu);
+});
