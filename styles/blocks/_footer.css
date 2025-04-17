@@ -40,6 +40,7 @@
 	align-items: center;
 	flex-wrap: wrap;
 	margin: 60px 0 20px 0;
+	gap: 20px;
 }
 
 .footer__brand {

@@ -16,7 +16,7 @@ body {
 }
 
 .container {
-	max-width: 1920px;
+	max-width: 1660px;
 	margin: 0 auto;
 	padding: 0 30px;
 }
@@ -49,18 +49,33 @@ body {
 }
 
 .btn {
+	font-family: "Arial", serif;
+	display: inline-block;
 	margin-top: 30px;
-	background: #fff;
-	color: #000;
-	border: 2px solid #fff;
-	padding: 1.5rem 3rem;
+	padding: 1.2rem 3rem;
 	font-size: 1.5rem;
+	font-weight: 500;
+	text-align: center;
+	color: #000;
+	background-color: #fff;
+	border: 2px solid #fff;
 	border-radius: 4px;
+	text-decoration: none;
 	cursor: pointer;
-	transition: background 0.3s;
+	transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	user-select: none;
 }
 
-.btn:hover {
-	background: transparent;
+.btn:hover,
+.btn:focus {
+	background-color: transparent;
 	color: #fff;
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+	outline: none;
+}
+
+.btn:active {
+	transform: scale(0.98);
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
 }

@@ -4,6 +4,7 @@
 }
 
 .hero__content {
+	padding-top: 100px;
 	min-height: 777px;
 	display: flex;
 	justify-content: space-between;
@@ -14,10 +15,11 @@
 
 .hero__img {
 	position: absolute;
-	top: 0;
+	top: -100px;
 	right: 0;
 	margin: 0;
 	padding: 0;
+	z-index: 100;
 }
 
 .hero h1 {
