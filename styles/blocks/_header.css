@@ -8,7 +8,6 @@
 	background: #222222;
 	color: white;
 	transition: background 0.5s;
-
 }
 
 .header__content {
@@ -89,5 +88,9 @@
 .header--scrolled .header__burger::before,
 .header--scrolled .header__burger::after {
 	background-color: black;
-	transition: background-color 0.5s;
+	transition: all 0.5s;
+}
+
+.header--scrolled .list__item a::before {
+	background-color: black;
 }
