@@ -40,6 +40,13 @@ input[type="email"] {
 	font-size: 24px;
 	border: 2px solid #ddd;
 	border-radius: 6px;
+	outline: none;
+	transition: all 0.3s;
+}
+
+input:focus {
+	border: 2px solid black;
+	box-shadow: 5px 5px 0px rgba(0, 0, 0, 1);
 }
 
 input::placeholder {
@@ -51,7 +58,7 @@ input::placeholder {
 	align-items: center;
 	gap: 10px;
 	font-size: 24px;
-	margin: 6px 0;
+	margin: 6px 4px;
 	font-family: Arial;
 	color: #333;
 	cursor: pointer;
