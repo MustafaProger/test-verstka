@@ -57,10 +57,44 @@ document.addEventListener("DOMContentLoaded", () => {
 		body.classList.toggle("lock");
 	};
 
+	const animateOnScroll = () => {
+		const observer = new IntersectionObserver(
+			(entries) => {
+				entries.forEach((entry) => {
+					if (entry.isIntersecting) {
+						const element = entry.target;
+
+						// Добавляем классы для анимации
+						element.classList.add("active");
+
+						// Добавляем класс задержки, если указан data-атрибут
+						const delay = element.dataset.delay;
+						if (delay) {
+							element.classList.add(delay);
+						}
+
+						// Прекращаем наблюдение после активации
+						observer.unobserve(element);
+					}
+				});
+			},
+			{
+				threshold: 0.2,
+				rootMargin: "0px 0px -50px 0px",
+			}
+		);
+
+		// Наблюдаем за всеми элементами с анимацией
+		document.querySelectorAll(".fade-in-left, .fade-in-down").forEach((el) => {
+			observer.observe(el);
+		});
+	};
+
 	const init = () => {
 		updateHeroImageHeight();
 		recolorHeader();
 		initSmoothScroll();
+		animateOnScroll();
 	};
 
 	burger?.addEventListener("click", toggleMenu);
