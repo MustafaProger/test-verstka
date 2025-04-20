@@ -1,4 +1,3 @@
-/* ==================== Header ==================== */
 @media (max-width: 1530px) {
 	.header {
 		height: 80px;
@@ -11,12 +10,8 @@
 	.logo {
 		font-size: 32px;
 	}
-}
-
-/* ==================== Hero ==================== */
-@media (max-width: 1530px) {
 	.hero {
-		background-image: url("../../assets/images/hero_bg.png");
+		background-image: url("../assets/images/hero_bg.png");
 		background-size: cover;
 		background-position: 50% 50%;
 		background-attachment: fixed;
@@ -30,120 +25,26 @@
 	}
 	.hero__desc {
 		margin: 10px 0 20px 0;
-		font-size: 32px;
-	}
-	.hero .text {
-		font-size: 16px;
-		line-height: 45px;
 	}
 	.hero__text .list__items {
 		align-items: center;
 	}
-}
-
-@media (max-width: 768px) {
-	.hero {
-		min-height: 100vh;
-		background-attachment: scroll;
+	.advantages {
+		padding-top: 50px;
 	}
-	.hero__content {
-		min-height: 100vh;
-		align-items: center;
-	}
-}
-
-@media (max-width: 425px) {
-	.hero__desc {
-		display: none;
-	}
-	.hero .list__item span {
-		font-size: 30px;
-	}
-	.hero .list__item::before {
-		width: 20px;
-		height: 20px;
-	}
-	.hero .text {
-		font-size: 20px;
-	}
-	.hero .hero__title {
-		font-size: 60px;
-	}
-	.list__items {
-		margin: 20px 0;
-	}
-	.hero .list__item {
-		padding-left: 0rem;
-		line-height: 35px;
-		flex-direction: column;
-	}
-	.hero .list__item::before {
-		display: none;
-	}
-	.btn {
-		margin: 0;
-	}
-}
-
-/* ==================== Advantages ==================== */
-@media (max-width: 1700px) {
-	.advantages__content {
-		grid-template-columns: minmax(300px, 622px) minmax(300px, auto);
+	.advantages__content  {
+		padding-top: 0;
+		grid-template-columns: minmax(100px, 500px) auto;
 	}
 	.advantages__image_right {
 		display: none;
 	}
 }
 
-@media (max-width: 1530px) {
-	.advantages {
-		padding-top: 50px;
-	}
-	.advantages__content .content {
-		padding-top: 0;
-	}
-}
-
 @media (max-width: 1300px) {
-	.advantages__content {
-		grid-template-columns: minmax(100px, 500px) auto;
-	}
 	.advantages .btn {
-		/* display: none; */
-		/* margin-top: 0px; */
-		/* width: 200px; */
+		margin-top: 50px;
 	}
-}
-
-@media (max-width: 950px) {
-	.advantages .text {
-		font-size: 16px;
-	}
-}
-
-@media (max-width: 768px) {
-	.advantages__image_left {
-		display: none;
-	}
-	.advantages__content {
-		grid-template-columns: auto;
-	}
-	.advantages .text {
-		font-size: 16px;
-	}
-	.advantages .btn {
-		margin-top: 30px;
-	}
-}
-
-@media (max-width: 425px) {
-	.advantages {
-		padding: 30px 0;
-	}
-}
-
-/* ==================== Form ==================== */
-@media (max-width: 1300px) {
 	.form-box {
 		grid-template-columns: 1fr;
 		background-color: transparent;
@@ -160,42 +61,55 @@
 	}
 }
 
+@media (max-width: 1000px) {
+	.advantages__content {
+		grid-template-columns: 300px 1fr;
+		grid-template-rows: repeat(2, 1fr);
+	}
+
+	.advantages__content .content {
+		grid-row: 1 / 3;
+		grid-column: 2 / 3;
+	}
+
+	.advantages__image_right {
+		display: block;
+	}
+}
+
 @media (max-width: 768px) {
-	.form-section h2 {
-		font-size: 30px;
+	.hero {
+		min-height: 100vh;
+		background-attachment: scroll;
+	}
+	.hero__content {
+		min-height: 100vh;
+		align-items: center;
+	}
+	.advantages__image_left {
+		display: none;
+	}
+	.advantages__content {
+		grid-template-columns: auto;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+		gap: 0;
+	}
+	.advantages__image_right {
+		display: none;
+	}
+	.advantages .btn {
+		margin-top: 40px;
 	}
 	.form-left input {
 		padding: 10px 20px;
-		font-size: 16px;
 	}
 	.form-section button {
-		font-size: 16px;
 		padding: 10px 20px;
 	}
 	.form-left form {
 		gap: 10px;
 	}
-	.checkbox span {
-		font-size: 16px;
-	}
-}
-
-@media (max-width: 425px) {
-	.form-left {
-		padding: 30px;
-	}
-	.btn {
-		font-size: 16px;
-		padding: 15px 20px;
-	}
-
-	.form-section {
-		padding: 30px;
-	}
-}
-
-/* ==================== Footer ==================== */
-@media (max-width: 768px) {
 	.footer__main,
 	.footer__bottom {
 		flex-direction: column;
@@ -208,7 +122,40 @@
 	}
 }
 
-@media (max-width: 425px) {
+@media (max-width: 444px) {
+
+	.container {
+		padding: 0 15px ;
+	}
+
+	.list__items {
+		margin: 20px 0;
+	}
+	.hero .list__item {
+		padding-left: 0;
+		flex-direction: column;
+	}
+	.hero .list__item::before {
+		display: none;
+	}
+	.btn {
+		margin: 0;
+	}
+	.advantages {
+		padding: 30px 0;
+	}
+	.advantages .content {
+		padding: 0 15px;
+	}
+	.form-left {
+		padding: 40px 20px;
+	}
+	.btn {
+		padding: 15px 20px;
+	}
+	.form-section {
+		padding: 30px 15px;
+	}
 	.footer__nav {
 		display: none;
 	}

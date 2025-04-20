@@ -1,6 +1,6 @@
 @font-face {
 	font-family: 'Prata';
-	src: url('../../assets/fonts/Prata-Regular.ttf') format('truetype');
+	src: url('../assets/fonts/Prata-Regular.ttf') format('truetype');
 	font-weight: 400;
 	font-style: normal;
 	font-display: swap;
@@ -50,7 +50,7 @@ body {
 	left: 0;
 	width: 40px;
 	height: 40px;
-	background-image: url("../../assets/icon/check.svg");
+	background-image: url("../assets/icon/check.svg");
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -61,8 +61,8 @@ body {
 	display: inline-block;
 	margin-top: 30px;
 	padding: 1.2rem 3rem;
-	font-size: 1.5rem;
-	font-weight: 500;
+	font-size: clamp(16px, 3vw, 24px);
+	font-weight: 800;
 	text-align: center;
 	color: #000;
 	background-color: #fff;
@@ -71,22 +71,30 @@ body {
 	text-decoration: none;
 	cursor: pointer;
 	transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
-	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 	user-select: none;
+}
+
+.btn_black {
+	background-color: black;
+	color: white;
+	border: 2px solid #000;
+	margin-top: 0px;
 }
 
 .btn:hover,
 .btn:focus {
 	background-color: transparent;
 	color: #fff;
-	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 	outline: none;
 }
 
-.btn:active {
-	transform: scale(0.98);
-	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+.btn_black:hover,
+.btn_black:focus {
+	background-color: transparent;
+	color: #000;
+	outline: none;
 }
+
 
 .overlay {
 	position: fixed;
